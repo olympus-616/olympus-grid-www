@@ -83,7 +83,7 @@ export default function Home() {
             Your apps, your data, your grid, your rules.
           </p>
 
-          <div style={{ display:'flex', gap:'1rem', justifyContent:'center', flexWrap:'wrap' }}>
+          <div className="hero-btns" style={{ display:'flex', gap:'1rem', justifyContent:'center', flexWrap:'wrap' }}>
             <a href="https://app.olympus-grid.com" className="btn btn-primary">
               Log In →
             </a>
@@ -107,7 +107,7 @@ export default function Home() {
 
       {/* ── NARRATIVE ────────────────────────────────────────── */}
       <div style={{ background:'#0E1535', color:'#F0F4F8' }}>
-        <div style={{ maxWidth:1200, margin:'0 auto', padding:'6rem 4rem' }}>
+        <div className="dark-band-inner" style={{ maxWidth:1400, margin:'0 auto', padding:'6rem 4rem' }}>
           <div className="divider" style={{ marginBottom:'3.5rem' }}><div className="divider-g">⬡</div></div>
           <div style={{ textAlign:'center', marginBottom:'3.5rem' }}>
             <span style={{ fontFamily:'Cinzel,serif', fontSize:'0.68rem', letterSpacing:'0.35em',
@@ -126,7 +126,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'1.5rem' }}>
+          <div className="grid-3col">
             {[
               {
                 emoji:'🏛', color:'#B8922E', border:'rgba(184,146,46,0.30)',
@@ -176,7 +176,7 @@ export default function Home() {
               Together they form a complete AI operating system.
             </p>
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:'1rem' }}>
+          <div className="grid-4col">
             {AGENTS.map(a => (
               <div key={a.name} className="card" style={{ padding:'1.5rem', textAlign:'center' }}>
                 <div style={{ fontSize:'1.5rem', marginBottom:'0.9rem' }}>{a.emoji}</div>
@@ -193,7 +193,7 @@ export default function Home() {
 
       {/* ── APPEXCHANGE + MESH VISUAL ────────────────────────── */}
       <div style={{ background:'#0E1535', color:'#F0F4F8' }}>
-        <div style={{ maxWidth:1200, margin:'0 auto', padding:'6rem 4rem' }}>
+        <div className="dark-band-inner" style={{ maxWidth:1400, margin:'0 auto', padding:'6rem 4rem' }}>
           <div style={{ textAlign:'center', marginBottom:'3.5rem' }}>
             <span style={{ fontFamily:'Cinzel,serif', fontSize:'0.68rem', letterSpacing:'0.35em',
                            textTransform:'uppercase', color:'#B8922E', display:'block', marginBottom:'0.85rem' }}>
@@ -212,7 +212,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'4rem', alignItems:'center' }}>
+          <div className="grid-2col">
             {/* Concentric circles mesh diagram */}
             <div style={{ position:'relative', height:360 }}>
               <style>{`
@@ -314,7 +314,7 @@ export default function Home() {
       {/* ── COSMOS-LOGOS ─────────────────────────────────────── */}
       <div className="section-alt">
         <div className="section-alt-inner">
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'4rem', alignItems:'center' }}>
+          <div className="grid-2col">
             <div>
               <span className="eyebrow">Open Protocol</span>
               <h2 style={{ fontFamily:'Cinzel,serif', fontSize:'clamp(1.6rem,2.5vw,2.4rem)',
@@ -366,7 +366,7 @@ export default function Home() {
             available to every customer.
           </p>
         </div>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'1.25rem' }}>
+        <div className="grid-3col">
           {[
             { label:'Apple, Google, Microsoft, and Email Login', sub:'Your Identity, Your Trusted Providers', status:'live' },
             { label:'Stripe, Apple IAP, Google Play', sub:'Fully metered and auditable transactions', status:'live' },
@@ -433,7 +433,7 @@ export default function Home() {
             Ready to bring sovereign AI infrastructure to your organization?
             Launch the portal to get started or contact us for enterprise deployment.
           </p>
-          <div style={{ display:'flex', gap:'1rem', justifyContent:'center', flexWrap:'wrap' }}>
+          <div className="hero-btns" style={{ display:'flex', gap:'1rem', justifyContent:'center', flexWrap:'wrap' }}>
             <a href="https://app.olympus-grid.com" className="btn btn-primary">Log In →</a>
             <a href="https://turtleshell.ai/waitlist" target="_blank" rel="noopener noreferrer"
                className="btn btn-gold">Enterprise Inquiry</a>

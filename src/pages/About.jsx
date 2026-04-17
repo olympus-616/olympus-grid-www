@@ -10,7 +10,7 @@ export default function About() {
         path="/about"
       />
       <section className="section" style={{ paddingTop:'9rem' }}>
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'5rem', alignItems:'start' }}>
+        <div className="grid-2col" style={{ gap:'5rem', alignItems:'start' }}>
           <div>
             <span className="eyebrow">About</span>
             <h1 style={{ fontFamily:'Cinzel,serif', fontSize:'clamp(1.8rem,3vw,2.8rem)',

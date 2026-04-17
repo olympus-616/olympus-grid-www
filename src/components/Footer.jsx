@@ -10,8 +10,8 @@ export default function Footer() {
       position: 'relative', zIndex: 1,
     }}>
       {/* TOP ROW */}
-      <div style={{
-        maxWidth: 1200, margin: '0 auto', padding: '3rem 4rem 2rem',
+      <div className="footer-grid" style={{
+        maxWidth: 1400, margin: '0 auto', padding: '3rem 4rem 2rem',
         display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr', gap: '3rem',
       }}>
         {/* BRAND */}
