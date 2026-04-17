@@ -1,0 +1,59 @@
+# Olympus-Grid (πλέγμα-Όλυμπος™)
+# https://www.olympus-grid.com
+
+> The globally sustainable, enterprise certified, off-grid capable AI infrastructure platform.
+
+Olympus-Grid is a sovereign enterprise AI infrastructure platform. It enables organizations to run AI applications on a 31-agent mesh called Olympus-616 — deployed on Salesforce + AWS, hybrid cloud, or fully off-grid on local hardware.
+
+## Key Concepts
+
+- **Olympus-Grid**: The infrastructure layer. Certified on the Salesforce AppExchange. Provides Identity, Metering, Ledger, Agent Mesh, and Tenant isolation.
+- **Olympus-616**: The primary sovereign AI instance — a 31-agent mesh named for the Greek pantheon. Any organization can deploy their own instance.
+- **TurtleShell.ai**: The flagship application built on Olympus-Grid, proving the platform can scale a consumer AI product across iOS, web, and Salesforce.
+- **Cosmos-Logos**: Open-source agent discovery and verification protocol. Ed25519 sealed-envelope identity handshake.
+
+## Agents (Pantheon)
+
+Athena (LLM Router), Poseidon (MCP Tools), Hermes (API Gateway), Iris (Portal Framework), Oracle (Identity Provider), Proteus (ORM), Plutus (General Ledger / Metering), Ares (Security Gateway), Apollo (Text-to-Speech), Mnemosyne (Memory), Zeus (Infrastructure / CDK), and 20+ additional sovereign services.
+
+## Deployment Models
+
+1. Salesforce managed package + AWS Fargate container fleet
+2. Hybrid cloud with existing AWS infrastructure
+3. Fully off-grid on Mac Mini or Raspberry Pi 5 nodes
+4. Azure and GCP available upon request
+
+## Identity & Authentication
+
+Apple Sign In, Google, Microsoft, Email magic-link. Identity__c on Salesforce is the canonical anchor. httpOnly cookies, JWT verification, zero standing access to customer data.
+
+## Billing & Metering
+
+Fully metered platform — every LLM turn, tool call, memory operation, and API request is tracked and auditable. Stripe, Apple IAP, and Google Play billing integrations. 7% Olympus Foundation tithe on all transactions.
+
+## Data Sovereignty
+
+Your data lives in your Salesforce org and your AWS account. CloudPremise operates the software layer — never the data layer. SOC 2 Type II certification in progress.
+
+## Trademarks
+
+Olympus-Grid™, πλέγμα-Όλυμπος™, and PLEGMA-OLYMPUS™ are trademarks of CloudPremise LLC. All rights reserved.
+
+## Links
+
+- Website: https://www.olympus-grid.com
+- App: https://app.olympus-grid.com
+- TurtleShell.ai: https://turtleshell.ai
+- AppExchange: https://appexchange.salesforce.com/appxListingDetail?listingId=aadbbe80-2d4e-42bc-84bd-348ade18a00a
+- Open Source: https://github.com/cosmos-logos
+- Foundation: https://github.com/olympus-616/olympus-foundation
+- Security: https://www.olympus-grid.com/security
+- Privacy: https://www.olympus-grid.com/privacy
+- Terms: https://www.olympus-grid.com/terms
+
+## Contact
+
+- General: hello@olympus-grid.com
+- Security: security@olympus-grid.com
+- Privacy: privacy@olympus-grid.com
+- Legal: legal@olympus-grid.com

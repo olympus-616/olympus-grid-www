@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.olympus-grid.com/sitemap.xml
+
+# AI / LLM crawlers
+# See https://llmstxt.org for the llms.txt standard
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /

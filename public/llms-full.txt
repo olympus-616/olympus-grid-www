@@ -1,0 +1,105 @@
+# Olympus-Grid (πλέγμα-Όλυμπος™) — Full Context
+# https://www.olympus-grid.com
+# Last updated: April 2026
+
+## Overview
+
+Olympus-Grid (Greek: πλέγμα-Όλυμπος, transliterated: PLEGMA-OLYMPUS) is a sovereign enterprise AI infrastructure platform built by CloudPremise LLC. The name comes from πλέγμα (grid, mesh, weave) and Όλυμπος (Olympus, the seat of the gods).
+
+The platform enables any organization to deploy a complete AI operating system — called Olympus-616 — that runs on their own infrastructure under their own rules. The 31-agent mesh is named for the Greek pantheon: each agent owns a sovereign domain, and together they form a complete AI operating system.
+
+## Architecture: Three Layers
+
+### Layer 1: Olympus-Grid (Infrastructure)
+The enterprise-grade platform that every sovereign AI instance runs on. Salesforce-backed, AWS-deployable, off-grid capable. Certified on the Salesforce AppExchange (Listing ID: aadbbe80-2d4e-42bc-84bd-348ade18a00a). The grid provides:
+- Identity management (Oracle IdP)
+- Transactional metering and general ledger (Plutus G/L)
+- Agent mesh orchestration
+- Tenant isolation
+- Multi-surface portal framework (Iris)
+
+### Layer 2: Olympus-616 (Sovereign AI Instance)
+The primary sovereign deployment of the 31-agent mesh. Key agents:
+- **Athena LLM**: Multi-provider LLM router — OpenAI, Anthropic Claude, Google Gemini, xAI Grok, local Ollama models
+- **Poseidon MCP**: Model Context Protocol integration layer — connects enterprise tools via namespaced, credential-sealed tool calls
+- **Hermes API**: CORS proxy and API gateway with JWT entitlements and path-based routing
+- **Iris Portal**: Universal portal framework deployed to Salesforce Experience Cloud
+- **Oracle IdP**: Identity provider — Apple, Google, Microsoft, Email login. Identity__c on Salesforce is canonical.
+- **Proteus ORM**: Universal ORM — Salesforce, AWS DynamoDB, Azure Cosmos, Google Firestore, and more
+- **Plutus G/L**: Transactional metering — tracks every turn, database read, memory write, and tool call
+- **Ares**: Security gateway and API perimeter
+- **Apollo**: Text-to-speech service
+- **Mnemosyne**: Agent memory — normalized, cache, and vector solutions
+- **Zeus**: Infrastructure as code (AWS CDK)
+- **Cosmos-Logos**: Open agent discovery and verification protocol
+
+### Layer 3: Applications (e.g., TurtleShell.ai)
+Applications built on Olympus-Grid inherit the full infrastructure: identity, billing, metering, agent mesh, and multi-surface deployment. TurtleShell.ai is the flagship proof — a globally-scaled sovereign AI assistant available on iOS, web, and Salesforce.
+
+## Deployment Models
+
+1. **Cloud**: Salesforce managed package + AWS Fargate Pantheon container fleet
+2. **Hybrid**: Your existing AWS infrastructure with Olympus-Grid overlay
+3. **Off-Grid**: Fully sovereign on Mac Mini, Raspberry Pi 5, or custom ARM nodes
+4. **Azure / GCP**: Available upon request
+
+All deployment models use the same Olympus-616 agent mesh and Cosmos-Logos protocol.
+
+## Security Posture
+
+- SOC 2 Type II certification in progress
+- Annual penetration testing
+- Encrypted at rest and in transit
+- Zero standing access to customer data
+- httpOnly Secure SameSite cookies for authentication
+- Ed25519 sealed-envelope agent identity verification
+- Salesforce SOC 2, ISO 27001 inherited controls
+- HIPAA BAA available for healthcare deployments
+- GDPR and CCPA compliant
+
+## Identity & Authentication
+
+Supported providers: Apple Sign In, Google, Microsoft, Email magic-link, Salesforce SSO. Identity__c on Salesforce is the canonical identity anchor for the entire grid. All authentication flows produce JWTs verified against signed certificates.
+
+## Metering & Billing
+
+Fully metered platform. Every billable event is tracked, ledgered, and auditable:
+- LLM turns and token usage
+- Tool calls (MCP)
+- Memory reads, writes, and searches
+- Database operations
+- API requests (inbound and outbound)
+
+Billing integrations: Stripe, Apple In-App Purchase, Google Play. The Olympus Foundation tithe (7% of all platform transactions) funds verified 501(c) charity partners.
+
+## Open Source
+
+The Cosmos-Logos protocol and certain infrastructure components are licensed under AGPL-3.0. Repository: https://github.com/cosmos-logos
+
+## Use Cases
+
+- **Financial Services**: Compliance queries, regulatory databases, full audit trail
+- **Healthcare**: HIPAA-aligned, on-premises LLM via Ollama, PHI-safe architecture
+- **Social Media Analytics**: Multi-platform signal aggregation, real-time trend detection
+- **Marketing Attribution**: Multi-touch attribution, campaign performance, Pardot bridge
+- **Legal & Compliance**: Contract review, clause extraction, regulatory monitoring
+- **Consumer AI**: TurtleShell.ai — iOS + web + Salesforce embedded viewer
+
+## Organizations
+
+- **CloudPremise LLC**: Parent company, software operator
+- **Olympus-616 (GitHub: olympus-616)**: Primary sovereign instance, 31-agent mesh
+- **Cosmos-Logos (GitHub: cosmos-logos)**: Open-source agent discovery protocol and client applications
+- **Olympus Foundation (GitHub: olympus-616/olympus-foundation)**: Non-profit, tithe management, open source stewardship
+
+## Trademarks
+
+Olympus-Grid™, πλέγμα-Όλυμπος™, and PLEGMA-OLYMPUS™ are trademarks of CloudPremise LLC. Trademark applications pending. All rights reserved.
+
+## Contact
+
+- General: hello@olympus-grid.com
+- Security: security@olympus-grid.com
+- Privacy: privacy@olympus-grid.com
+- Legal: legal@olympus-grid.com
+- Investors: https://investors.olympus-foundation.org
