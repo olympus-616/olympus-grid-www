@@ -32,12 +32,22 @@ export default {
     '/references',
   ],
 
-  // AWS infrastructure — filled in by Track A.
+  // AWS infrastructure — TEST / throwaway POC resources. Provisioned
+  // 2026-04-28 in account 842485730943 (us-east-1) to validate the Iris
+  // MVP architecture against pre-prod URLs before any DNS cuts. Production
+  // CDN architecture is a separate design — these resources will be
+  // deleted once the proof completes (see scripts/teardown-test-cdn.sh).
   aws: {
     region: 'us-east-1',
-    bucketName: '<<TBD>>',
-    distributionId: '<<TBD>>',
-    distributionDomain: '<<TBD>>',
+    bucketName: 'test-og-iris-bundle',
+    distributionId: 'E29U6MZUQ6DP0U',
+    distributionDomain: 'dt47y7dxlllrx.cloudfront.net',
+    // CloudFront origin path is /marketing-www, so S3 sync target is
+    // s3://test-og-iris-bundle/marketing-www/ and CloudFront strips that
+    // prefix when fetching from origin. Browser sees clean URLs:
+    //   https://dt47y7dxlllrx.cloudfront.net/about → s3://.../marketing-www/about/index.html
+    originAccessControlId: 'E1MUAQSUFJWK33',
+    cloudFrontFunction: 'test-og-iris-rewrite',
   },
 
   // Cache policy applied during S3 sync. Hashed bundle assets are
