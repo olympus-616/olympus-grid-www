@@ -5,7 +5,8 @@ const NAV_LINKS = [
   { to: '/about',      label: 'About' },
   { to: '/references', label: 'Use Cases' },
   { to: '/security',   label: 'Security' },
-  { to: '/terms',      label: 'Legal' },
+  { to: '/privacy',    label: 'Privacy' },
+  { to: '/terms',      label: 'Terms' },
 ]
 
 export default function Nav() {
@@ -61,7 +62,8 @@ export default function Nav() {
            target="_blank" rel="noopener noreferrer"
            style={{ color: 'rgba(212,168,67,0.7)', fontFamily:'Jost,sans-serif',
                     fontSize:'0.82rem',fontWeight:500,letterSpacing:'0.08em',
-                    textTransform:'uppercase' }}>
+                    textTransform:'uppercase',textDecoration:'none',
+                    borderBottom:'2px solid transparent',paddingBottom:'0.25rem' }}>
           Investors
         </a>
         <a href="https://app.olympus-grid.com"
