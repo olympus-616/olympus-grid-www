@@ -7,7 +7,7 @@ const SECTIONS = [
     items: [
       { q: 'What does "sovereign AI" mean?', a: 'Sovereign AI means your data, your models, your infrastructure. Olympus-Grid is designed so no data leaves your sovereign perimeter without explicit configuration. The grid runs on your Salesforce org, your AWS account, or your own physical hardware. No shared compute, no shared storage, no shared identity.' },
       { q: 'How is Olympus-Grid deployed?', a: 'Three deployment models: (1) Salesforce managed package + AWS Fargate Pantheon container fleet, (2) Hybrid cloud with your existing AWS infrastructure, (3) Fully off-grid on a fleet of Mac Minis or Raspberry Pi 5 nodes. All three models use the same Olympus-616 agent mesh. Azure and GCP (Google Cloud Platform) deployments are available upon request.' },
-      { q: 'Who has access to my data?', a: 'Nobody but you. Identity, conversations, memory, and ledger records live in your Salesforce org and your AWS account — never on shared infrastructure. Olympus-616 is the managed agent configuration operated by CloudPremise LLC under enterprise-grade controls: SOC 2 Type II certification in progress, annual penetration testing, encrypted at rest and in transit, and zero standing access to customer data. We operate the software layer. You own the data layer. The two never cross without your explicit consent.' },
+      { q: 'Who has access to my data?', a: 'Nobody but you. Identity, conversations, memory, and ledger records live in your Salesforce org and your AWS account — never on shared infrastructure. Olympus-616 is the managed agent configuration under enterprise-grade controls: SOC 2 Type II certification in progress, annual penetration testing, encrypted at rest and in transit, and zero standing access to customer data. We operate the software layer. You own the data layer. The two never cross without your explicit consent.' },
     ],
   },
   {
@@ -22,22 +22,22 @@ const SECTIONS = [
     title: 'Data & Privacy',
     items: [
       { q: 'Where is conversation data stored?', a: 'Conversation history is stored in Mnemosyne — the sovereign memory layer. In the default configuration, conversations are stored as files on your sovereign node, indexed in Salesforce Conversation__c records. You can configure alternative storage backends via Proteus.' },
-      { q: 'Is my data used to train models?', a: 'No. Olympus-Grid does not use your data to train any model. LLM calls are routed via Athena to your configured provider (OpenAI, Anthropic, Gemini, Grok, or your local Ollama instance). Your data flows to your chosen provider under your own API key. CloudPremise has no visibility into these calls.' },
-      { q: 'What data does CloudPremise collect?', a: 'CloudPremise collects billing data (via Stripe), product usage telemetry (shell metering events via Plutus), and support communications. We do not collect conversation content, uploaded files, or agent outputs. The LedgerEntry__c audit trail lives in your Salesforce org.' },
+      { q: 'Is my data used to train models?', a: 'No. Olympus-Grid does not use your data to train any model. LLM calls are routed via Athena to your configured provider (OpenAI, Anthropic, Gemini, Grok, or your local Ollama instance). Your data flows to your chosen provider under your own API key. The platform has no visibility into these calls.' },
+      { q: 'What data does the platform collect?', a: 'The platform collects billing data (via Stripe), product usage telemetry (shell metering events via Plutus), and support communications. It does not collect conversation content, uploaded files, or agent outputs. The LedgerEntry__c audit trail lives in your Salesforce org.' },
     ],
   },
   {
     title: 'Compliance & Certifications',
     items: [
       { q: 'What compliance frameworks does Olympus-Grid support?', a: 'Olympus-Grid is designed for deployment in regulated industries. The Salesforce-backed architecture inherits Salesforce\'s SOC 2 Type II, ISO 27001, HIPAA BAA, GDPR, and CCPA compliance postures. Off-grid deployments require customer-managed compliance controls.' },
-      { q: 'Is Olympus-Grid HIPAA-compliant?', a: 'Olympus-Grid can be deployed in a HIPAA-aligned configuration using on-premises Ollama LLM routing (no PHI leaves your perimeter) and Salesforce as the data store (BAA available from Salesforce). CloudPremise can execute a BAA for grid operations. Contact us for enterprise compliance discussions.' },
+      { q: 'Is Olympus-Grid HIPAA-compliant?', a: 'Olympus-Grid can be deployed in a HIPAA-aligned configuration using on-premises Ollama LLM routing (no PHI leaves your perimeter) and Salesforce as the data store (BAA available from Salesforce). A BAA is available for grid operations on request. Contact us for enterprise compliance discussions.' },
       { q: 'What is the AppExchange security review status?', a: 'The Olympus-Grid managed package is listed on the Salesforce AppExchange. Salesforce AppExchange packages undergo security review by Salesforce\'s security team before listing. See the AppExchange listing for current certification status.' },
     ],
   },
   {
     title: 'LLM & AI Safety',
     items: [
-      { q: 'Which LLMs does Olympus-Grid support?', a: 'Athena routes to any configured LLM provider: OpenAI (GPT-4o, o1), Anthropic (Claude), Google (Gemini), xAI (Grok), and local Ollama models. You configure your own API keys. CloudPremise never holds your LLM provider credentials.' },
+      { q: 'Which LLMs does Olympus-Grid support?', a: 'Athena routes to any configured LLM provider: OpenAI (GPT-4o, o1), Anthropic (Claude), Google (Gemini), xAI (Grok), and local Ollama models. You configure your own API keys. The platform never holds your LLM provider credentials.' },
       { q: 'How is shell balance enforced?', a: 'Shell balance is enforced server-side by Ares before any chat request is forwarded to Athena. Client-side balance checks are supplementary. Ares validates balance against Plutus on every request — a depleted balance cannot be bypassed by modifying client state.' },
       { q: 'What happens if the grid goes offline?', a: 'Olympus-Grid is designed for graceful degradation. The off-grid Turtle Cave fleet operates independently of cloud connectivity. Athena fails gracefully with a user-facing error when all configured LLM providers are unreachable. No data is lost during outages.' },
     ],

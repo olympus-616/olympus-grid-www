@@ -31,10 +31,10 @@ export default function Footer() {
           </p>
           <p style={{ fontSize:'0.72rem', color:'rgba(200,210,230,0.45)',
                       fontWeight:300, marginTop:'1rem', lineHeight:1.6 }}>
-            © {new Date().getFullYear()} CloudPremise LLC<br/>
-            Olympus-Grid™, πλέγμα-Όλυμπος™, and<br/>
-            PLEGMA-OLYMPUS™ are trademarks of<br/>
-            CloudPremise LLC. All rights reserved.
+            © {new Date().getFullYear()} Olympus-Grid.<br/>
+            Olympus-Grid™, πλέγμα-Όλυμπος™,<br/>
+            and PLEGMA-OLYMPUS™ — trademark<br/>
+            applications pending.
           </p>
         </div>
 
