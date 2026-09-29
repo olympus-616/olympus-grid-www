@@ -100,7 +100,7 @@ export default function Home() {
           <p style={{ marginTop:'2.5rem', fontSize:'0.7rem',
                       color:'rgba(55,60,78,0.40)', letterSpacing:'0.06em' }}>
             Olympus-Grid™ · πλέγμα-Όλυμπος™ · PLEGMA-OLYMPUS™ — Trademark applications pending.
-            © {new Date().getFullYear()} CloudPremise LLC
+            © {new Date().getFullYear()} Olympus-Grid
           </p>
         </div>
       </section>

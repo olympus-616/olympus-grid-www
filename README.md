@@ -94,7 +94,7 @@ Hashed asset URLs are self-cache-busting; only HTML and sitemap-class files need
 
 All pages and the footer carry:
 
-> Olympus-Grid™, πλέγμα-Όλυμπος™, and PLEGMA-OLYMPUS™ are trademarks of CloudPremise LLC. Trademark applications pending.
+> Olympus-Grid™, πλέγμα-Όλυμπος™, and PLEGMA-OLYMPUS™ — trademark applications pending.
 
 The Terms of Service page explicitly establishes commercial use of all three marks.
 
